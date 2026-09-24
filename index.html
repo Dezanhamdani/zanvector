@@ -9,28 +9,28 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap">
-    <a href="/" class="brand"><span class="dot"></span>ZanVector</a>
+    <a href="./" class="brand"><span class="dot"></span>ZanVector</a>
     <nav class="primary">
-      <a href="/" aria-current="page">Home</a>
-      <a href="/portfolio/">Portfolio</a>
-      <a href="/services/">Services</a>
-      <a href="/custom-vector-illustration/">Custom Vector Illustration</a>
+      <a href="./" aria-current="page">Home</a>
+      <a href="portfolio/">Portfolio</a>
+      <a href="services/">Services</a>
+      <a href="custom-vector-illustration/">Custom Vector Illustration</a>
     </nav>
     <button class="menu-btn" aria-label="Buka menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
   <nav class="mobile">
-    <a href="/">Home</a>
-    <a href="/portfolio/">Portfolio</a>
-    <a href="/services/">Services</a>
-    <a href="/custom-vector-illustration/">Custom Vector Illustration</a>
+    <a href="./">Home</a>
+    <a href="portfolio/">Portfolio</a>
+    <a href="services/">Services</a>
+    <a href="custom-vector-illustration/">Custom Vector Illustration</a>
   </nav>
 </header>
 
@@ -42,8 +42,8 @@
       <h1>Ilustrasi vektor, digambar presisi.</h1>
       <p class="lead">ZanVector mengubah ide, foto, atau brief kamu jadi ilustrasi vektor yang bersih, scalable, dan siap dipakai — untuk logo, konten sosial, sampai kemasan produk.</p>
       <div class="hero-actions">
-        <a href="/custom-vector-illustration/" class="btn primary">Pesan Ilustrasi</a>
-        <a href="/portfolio/" class="btn ghost">Lihat Portfolio</a>
+        <a href="custom-vector-illustration/" class="btn primary">Pesan Ilustrasi</a>
+        <a href="portfolio/" class="btn ghost">Lihat Portfolio</a>
       </div>
     </div>
   </section>
@@ -52,7 +52,7 @@
     <div class="wrap">
       <div class="section-head">
         <h2>Karya Terpilih</h2>
-        <a href="/portfolio/" class="muted">Lihat semua &rarr;</a>
+        <a href="portfolio/" class="muted">Lihat semua &rarr;</a>
       </div>
       <div class="grid" id="home-portfolio"></div>
     </div>
@@ -77,7 +77,7 @@
         <div class="price">Mulai dari harga custom</div>
       </div>
       <div style="margin-top:24px">
-        <a href="/services/" class="btn ghost">Detail Semua Jasa</a>
+        <a href="services/" class="btn ghost">Detail Semua Jasa</a>
       </div>
     </div>
   </section>
@@ -87,7 +87,7 @@
 <section class="cta-band">
   <div class="wrap">
     <h2>Punya ide? Mari digambar.</h2>
-    <a href="/custom-vector-illustration/" class="btn primary">Mulai Pesan</a>
+    <a href="custom-vector-illustration/" class="btn primary">Mulai Pesan</a>
   </div>
 </section>
 
@@ -95,15 +95,16 @@
   <div class="wrap">
     <div class="copy">&copy; 2026 ZanVector. Semua karya dibuat sendiri.</div>
     <div class="links">
-      <a href="/portfolio/">Portfolio</a>
-      <a href="/services/">Services</a>
+      <a href="portfolio/">Portfolio</a>
+      <a href="services/">Services</a>
       <a href="mailto:hello@zanvector.com">Email</a>
     </div>
   </div>
 </footer>
 
-<script src="/js/main.js"></script>
-<script src="/js/portfolio-data.js"></script>
+<script>window.ZV_ROOT = '';</script>
+<script src="js/main.js"></script>
+<script src="js/portfolio-data.js"></script>
 <script>
   // Render up to 6 preview pieces on the homepage from the shared dataset.
   var target = document.getElementById('home-portfolio');

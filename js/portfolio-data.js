@@ -46,8 +46,9 @@ var ZANVECTOR_WORKS = [
 ];
 
 function renderCard(item) {
+  var root = (typeof window.ZV_ROOT === 'string') ? window.ZV_ROOT : '';
   return (
-    '<a class="card" href="/portfolio/">' +
+    '<a class="card" href="' + root + 'portfolio/">' +
       '<div class="frame">' + item.svg + '</div>' +
       '<div class="meta"><span class="tag">' + item.tag + '</span><h3>' + item.title + '</h3></div>' +
     '</a>'
